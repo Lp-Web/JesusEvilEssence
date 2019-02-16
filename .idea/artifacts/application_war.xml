@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="application-war">
+    <output-path>$PROJECT_DIR$/out/artifacts/application_war</output-path>
+    <root id="root">
+      <element id="artifact" artifact-name="JavaEE-war:war exploded" />
+      <element id="module-output" name="JavaEE-ejb" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaEE-ejb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="library" level="project" name="JPA 2.0-2.0" />
+    </root>
+  </artifact>
+</component>
