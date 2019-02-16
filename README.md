@@ -1,4 +1,5 @@
 # Simple Online Ticketing
+*By Sébastien Criquet & Léonard Bonnet*
 
 ## Points traités dans le sujet
 
