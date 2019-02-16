@@ -11,12 +11,22 @@
   <title>JSP Page</title>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+  <h1>Liste des événements</h1>
+  
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Lieu</th>
+    </tr>
   <%
     List<Evenement> events = (List<Evenement>)request.getAttribute("events");
     for(Evenement evenement : events) {
-      out.println(evenement.getId() + " -> " + evenement.getLieu() + "<br>");
+      out.println("<tr>");
+      out.println("<td>" + evenement.getId() + "</td>");
+      out.println("<td>" + evenement.getLieu() + "</td>");
+      out.println("</tr>");
     }
   %>
+  </table>
 </body>
 </html>
