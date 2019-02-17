@@ -31,14 +31,13 @@ public class AppServlet extends HttpServlet {
         );
 
         bean.createEvents(new ArrayList<Evenement>(Arrays.asList(evenement)));
-        System.out.println("HELLO SOUT HERE: " + bean.getEvenements().size());
 
         if(request.getParameter("id") == null) {
             request.setAttribute("events", bean.getEvenements());
-            request.getRequestDispatcher("all.jsp").forward(request, response);
+            request.getRequestDispatcher("events/all.jsp").forward(request, response);
         } else {
             request.setAttribute("id", bean.getEvenementById(request.getParameter("id")));
-            request.getRequestDispatcher("one.jsp").forward(request, response);
+            request.getRequestDispatcher("events/one.jsp").forward(request, response);
         }
     }
 
