@@ -24,7 +24,10 @@ Le détail d'un événement est accessible via la route `/app` en y ajoutant un 
 Le détail d'un événement affiche l'id, le lieu, la description et la date de l'événement.
 
 ### Permettre à un utilisateur de réserver des places pour cet événement
-Pour qu'un utilisateur puisse réserver une place, il doit être connecté au site. Ainsi, il peut créer un compte utilisateur via la route `/register`. Il peut ensuite se connecter via la route `/login` et se déconnecter via `/disconnect`. Les réservations s'effectuent via la route `/reservation`.
+Pour qu'un utilisateur puisse réserver une place, il doit être connecté au site. Les réservations s'effectuent via la route `/reservation`.
+
+### Gérer des utilisateurs qui vont pouvoir créer un compte
+Un utilisateur peut créer un compte utilisateur via la route `/register`. Il peut ensuite se connecter via la route `/login` et se déconnecter via `/disconnect`.
 
 ## Difficultés rencontrées
 - Wildfly et JBoss nous ont posé de gros problèmes au début du projet. En effet, nous étions obligés de tuer le serveur via un terminal plusieurs fois avant chaque redéploiement pour avoir les droits nécessaire au-dit redéploiement. Au bout d'un certain temps, nous étions forcés de redémarrer les machines physiques.
